@@ -1,0 +1,36 @@
+
+.dropdown.show .dropdown-menu {
+  display: block;
+}
+#templatemo_nav_top{
+  background-color: rgb(34, 34, 99);
+}
+#logo{
+  color: rgb(34, 34, 99);
+  font:bolder;
+  font-weight: 400;
+}
+#templatemo_main_nav a{
+  color: rgba(34, 34, 99, 0.719);
+}
+#templatemo_main_nav a:hover{
+  color: rgb(34, 34, 99);
+}
+.dropdown
+{
+  margin-top: -5px;
+  color:rgb(34, 34, 99);
+}
+.dropdown:hover
+{
+  color:rgb(34, 34, 99);
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+.dropdown-menu {
+  margin-top: 2px; /* Adjust this value to move the dropdown further down */
+
+}
+

@@ -1,0 +1,52 @@
+h3
+{
+  font-weight: bold;
+  text-align: center;
+}
+button{
+  width: 20%;
+  font-size: larger;
+  border-radius: 15px;
+  border: 0px;
+  background-color:  rgba(34, 34, 99, 0.575);
+  margin: 15px;
+}
+button:hover{
+  background-color:  rgb(34, 34, 99);
+}
+.order
+{
+
+  width: 300px;
+
+}
+.form-group
+{
+ border-radius:10px;
+ padding:5px;
+ width: 100%;
+}
+.form-check
+{
+margin-top: 40px;
+margin-left: 20px;
+}
+.container
+{
+  width: 60%;
+  height: 40%;
+  margin-top: 20px;
+  border-radius: 20px;
+  background-color: rgba(175, 168, 168, 0.281);
+  margin-bottom: 30px;
+
+}
+.back
+{
+margin-left: 70%;
+}
+.icon-green
+{
+  color:green;
+  font-size: larger;
+}

@@ -1,0 +1,64 @@
+<div class="table-responsive">
+  <table class="table table-borderless ">
+    <thead>
+      <tr>
+        <td class="fs-1 m-4" scope="col" >Shopping Cart
+          <hr>
+        </td>
+
+        <th scope="col" class="text-white">Quantity</th>
+        <th scope="col" class="text-white">Price</th>
+        <th scope="col" class="text-white">delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Iterate through each product in the cart -->
+      <tr *ngFor="let product of Cartproduct; let i = index">
+        <td>
+          <div class="card border-0">
+            <img [src]="'https://localhost:7016' + product.productURL" class="card-img-top" alt="ImageProduct" style="width:10%">
+            <div class="card-body  border-bottom-3" style="width:100%">
+              <h5 class="card-title fs-5 fw-bold">{{ product.name }}</h5>
+              <p class="card-text fs-6">{{ product.description }}</p>
+              <p class="card-text fs-6">
+              <span class="fw-bold">Color:</span>
+                  {{ product.color }}
+              </p>
+              <p class="card-text fs-6"><span class="fw-bold">Size:</span> {{ product.size }}</p>
+              <p class="card-text fs-6"><span class ="fw-bold">Seller:</span> {{ product.companyName }}</p>
+              <br>
+            </div>
+          </div>
+        </td>
+          <button (click)="decreaseQuantity(product.id, account.r.UserId)" class="border-0 fs-6 ">-</button>
+          <span class="bg-white fs-6">{{ product.quantity }}</span>
+          <button class="border-0 bg-white fs-6" (click)="increaseQuantity(product.id, account.r.UserId)" >+</button>
+          <td>
+            <span> {{product.price}}</span>
+          </td>
+        <td>
+          <button class="btn btn-danger animate__animated animate__fadeIn bi bi-trash" (click)="onDelete(product.id, account.r.UserId)"></button>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">Total:</td>
+        <td>{{ totalPrice | number:'1.1-1' }}</td>
+        <td ></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="d-grid gap-2">
+  <button
+    type="button"
+    name="checkout"
+    id="check"
+    class="btn btn-dark"
+    [routerLink]="['/Checkout']" [queryParams]="getCheckoutQueryParams()"
+  >
+  Checkout
+  </button>
+
+
+

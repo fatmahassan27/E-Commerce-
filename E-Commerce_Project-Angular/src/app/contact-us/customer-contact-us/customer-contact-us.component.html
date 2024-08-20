@@ -1,0 +1,59 @@
+
+
+<!-- Login 9 - Bootstrap Brain Component -->
+<section class="bg-white py-3 py-md-5 py-xl-8">
+  <div class="container">
+    <div class="row gy-4 align-items-center">
+      <div class="col-12 col-md-6 col-xl-7">
+        <div class="d-flex justify-content-center borde-0 rounded ">
+          <div class="col-12 col-xl-9">
+            <img class="img-fluid" style="width: 100%;" src="../assets/images/contact-us.png" alt="Trade Hero">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-xl-5">
+        <div class="card border-0 rounded-4">
+          <div class="card-body p-3 p-md-4 p-xl-5">
+            <div class="row">
+              <div class="col-12">
+                <div class="mb-4" >
+                  <h3> Contact Us </h3>
+
+                </div>
+              </div>
+            </div>
+            <form action="#!">
+              <div class="row gy-3 overflow-hidden">
+                <div class="col-12">
+                  <div class="form-floating mb-3">
+                    <input [(ngModel)]="Cont.name" type="fullName" class="form-control" name="name" id="name" value="" placeholder="name" required>
+                    <label for="name" class="form-label fs-6">Name</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating mb-3">
+                    <input [(ngModel)]="Cont.email" type="email" class="form-control" name="email" id="email" placeholder="name@example.com" required>
+                    <label for="email" class="form-label fs-6">Email</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating mb-3">
+                    <input [(ngModel)]="Cont.subject" type="subject" class="form-control" name="subject" id="subject" value="" placeholder="Subject" required>
+                    <label for="subject" class="form-label fs-6">Subject</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating mb-3">
+                    <div class="mb-3">
+                      <label for="Message" class="form-label"> Message</label>
+                      <textarea [(ngModel)]="Cont.message" class="form-control" name="" id="" rows="3"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="d-grid">
+                    <button (click)="save()" class="btn btn-dark btn-lg" type="submit">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </form>

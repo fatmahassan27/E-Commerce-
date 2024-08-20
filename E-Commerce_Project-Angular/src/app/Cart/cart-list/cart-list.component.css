@@ -1,0 +1,42 @@
+.bi-trash:hover
+{
+ background-color: red;
+ margin-left: 10px;
+}
+.bi-trash{
+  margin-left: 10px;
+}
+
+tbody
+{
+  width: 50%;
+}
+.btn-dark
+{
+border-radius: 20px;
+width: 110px;
+margin: 10px;
+margin-left: 45%;
+}
+#q
+{
+margin-top:15px ;
+}
+.table-responsive
+{
+  width: 70%;
+  margin-left: 20%;
+  margin-top: 10px;
+
+
+}
+.card
+{
+  margin: 4px;
+  margin-top: -20px;
+}
+hr{
+  width: 132%;
+}
+
+

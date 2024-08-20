@@ -1,0 +1,46 @@
+
+button
+{
+  font-size: medium;
+  margin: 5px;
+}
+.col-md-8{
+
+  margin-top: 30px;
+}
+
+#addtocart
+{
+  background-color: rgba(255, 174, 0, 0.692);
+  border: 0px;
+}
+#addtocart:hover
+{
+  background-color: rgb(255, 174, 0);
+  border: 0px;
+}
+.row{
+
+  width:1100px;
+  margin: 8px;
+
+}
+.card:hover
+{
+  border-color: rgb(34, 34, 99);
+  width:95%;
+
+}
+
+#wishlist-button:hover
+{
+background-color: red;
+}
+ #delete:hover
+ {
+  background-color: red;
+ }
+.row
+{
+  border-color: black;
+}

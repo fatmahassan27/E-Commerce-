@@ -1,0 +1,19 @@
+.h1 ,h2 ,h3 ,p
+{
+  color:rgb(34, 34, 99);
+}
+.h1,h2{
+  font:bolder;
+}
+.btn{
+  background-color: rgba(20, 35, 100, 0.733);
+  border-radius:20px;
+  color: white;
+}
+.btn:hover{
+  color: white;
+  border-radius:20px;
+  background-color:rgb(34, 34, 99);
+  width: 100px;
+}
+

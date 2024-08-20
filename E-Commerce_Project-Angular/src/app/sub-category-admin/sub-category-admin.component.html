@@ -1,0 +1,27 @@
+<div
+  class="table-responsive"
+>
+  <table
+    class="table table-bordered table-hover"
+  >
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Operations</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (item of Subcats; track $index) {
+      <tr>
+        <td>{{item.subCatName}}</td>
+        <td>
+          <a  class="btn btn-primary" [routerLink]="['/SubCategoryAdmin/Update/',item.subCatId]">Update</a>|
+          <a  class="btn btn-primary" (click)="Delete(item.subCatId)">Delete</a>|
+        </td>
+      </tr>
+    }
+    </tbody>
+  </table>
+</div>
+<button (click)="Add()">Add</button>
+

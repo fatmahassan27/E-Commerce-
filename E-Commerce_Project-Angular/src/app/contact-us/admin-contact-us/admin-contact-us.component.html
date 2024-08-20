@@ -1,0 +1,31 @@
+<div
+  class="table-responsive"
+>
+  <table
+    class="table table-bordered table-hover"
+  >
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Subject</th>
+        <th>Message</th>
+        <th>Date</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      @for (item of Conts; track $index) {
+      <tr>
+        <td>{{item.contactId}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.subject}}</td>
+        <td>{{item.message}}</td>
+        <td>{{item.createdDate |date }}</td>
+      </tr>
+    }
+    </tbody>
+  </table>
+</div>

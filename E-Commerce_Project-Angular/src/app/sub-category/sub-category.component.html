@@ -1,0 +1,9 @@
+
+@for (item of Subcats; track $index) {
+
+    <a class="btn btn-secondary bg-white border-0" href="#" role="button"
+       data-bs-toggle="dropdown" aria-expanded="false" [routerLink]="account.r.isCustomer ? '/SubCategory/' + item.subCatId : '/SubCategoryAdmin/'">
+      {{ item.subCatName }}
+    </a>
+}
+

@@ -1,0 +1,26 @@
+/* about.component.css */
+
+.container {
+  max-width: 800px;
+}
+
+header {
+  background-color:darkblue;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+h1 {
+  margin: 0;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+.carousel-item img {
+  max-height: 400px;
+  object-fit: cover;
+}
+

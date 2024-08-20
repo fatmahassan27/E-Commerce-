@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 mb-2" *ngFor="let product of products; let i = index">
+      <div class="card">
+        <img [src]="'https://localhost:7016' + product.productURL" class="card-img-top" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title fs-3 fw-bold">{{ product.name }}</h5>
+          <p class="card-text  fs-6">{{ product.description }}</p>
+          <p class="card-text  fs-6">Price: ${{ product.price }}</p>
+          <p class="card-text  fs-6">Company: {{ product.companyName }}</p>
+          <p class="card-text  fs-6">Size: {{ product.size }}</p>
+          <p class="card-text  fs-6">Color: {{ product.color }}</p>
+          <button id="addtocart" class="btn btn-primary animate__animated animate__fadeIn cart-button br-0" (click)="addToCart(product.id , account.r.UserId)"><i class="bi bi-cart"></i></button>
+          <button id ="wishlist-button" class="btn btn-danger animate__animated animate__fadeIn wishlist-button " (click)="addWish(product.id , account.r.UserId)"><i class="fas fa-heart "></i></button>
+          <button [routerLink]="['/Products']" class="btn btn-dark">Go Back</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

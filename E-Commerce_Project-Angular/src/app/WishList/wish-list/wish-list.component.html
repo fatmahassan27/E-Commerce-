@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 mb-2" *ngFor="let product of Wishproduct; let i = index">
+      <div class="card">
+        <img [src]="'https://localhost:7016' + product.productURL" class="card-img-top " style="width: 50%;" alt="Product Image">
+        <div class="card-body">
+          <h5 class="card-title fs-5 fw-bold">{{ product.name }}</h5>
+          <p class="card-text fs-6 fw-bold">{{ product.description }}</p>
+          <p class="card-text fs-6 fw-bold">Price: ${{ product.price }}</p>
+          <p class="card-text fs-6 fw-bold">Company: {{ product.companyName }}</p>
+          <p class="card-text fs-6 fw-bold">Size: {{ product.size }}</p>
+          <p class="card-text fs-6 fw-bold">Color: {{ product.color }}</p>
+          <button id="addtocart" class="btn btn-primary animate__animated animate__fadeIn cart-button br-0" (click)="addToCart(product.id , account.r.UserId)"><i class="fas fa-shopping-cart"></i></button>
+
+          <button class="btn btn-danger animate__animated animate__fadeIn fas fa-trash" (click)="onDelete(product.id, account.r.UserId)"></button>
+
+          <button [routerLink]="['/Products']" class="btn btn-dark fas fa-arrow-left"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
